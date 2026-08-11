@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Web App Studio — Sáng kiến ứng dụng Claude xây dựng hệ sinh thái Web App | Trung tâm DVKH VNPT VinaPhone</title>
+<meta name="description" content="Báo cáo sáng kiến: Ứng dụng Claude xây dựng hệ sinh thái Web App phục vụ đào tạo, tra cứu nghiệp vụ và phân tích chất lượng tại Trung tâm Dịch vụ Khách hàng - VNPT VinaPhone.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%230a56c9%22/><text x=%2250%22 y=%2266%22 font-size=%2258%22 fill=%22white%22 text-anchor=%22middle%22 font-family=%22Arial%22>A</text></svg>">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header" id="top">
+  <div class="nav-wrap">
+    <a class="brand" href="#top">
+      <span class="brand-mark">AI</span>
+      <span class="brand-text">Web App Studio</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Mở menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#gioi-thieu">Giới thiệu</a>
+      <a href="#quy-trinh">Quy trình</a>
+      <a href="#san-pham">Sản phẩm</a>
+      <a href="#ket-qua">Kết quả</a>
+      <a href="#danh-gia">Đánh giá</a>
+      <a href="#tac-gia">Nhóm tác giả</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="gioi-thieu">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Đăng ký sáng kiến cấp Tổng Công ty năm 2026 · Trung tâm Dịch vụ Khách hàng — VNPT VinaPhone</p>
+        <h1>AI Web App Studio <span class="accent">—</span><br>Ứng dụng Claude xây dựng hệ sinh thái Web App</h1>
+        <p class="hero-desc">Phục vụ đào tạo, tra cứu nghiệp vụ và phân tích chất lượng tại Trung tâm Dịch vụ Khách hàng. Áp dụng từ tháng 06/2026 — nhân sự nghiệp vụ không lập trình vẫn tự thiết kế và xuất bản Web App bằng AI Claude, tạo bước bứt phá trong cách làm việc.</p>
+        <div class="hero-cta">
+          <a href="#san-pham" class="btn btn-primary">Xem 12 sản phẩm đã triển khai</a>
+          <a href="#quy-trinh" class="btn btn-ghost">Xem quy trình 4 bước</a>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-card stat-accent">
+          <span class="stat-num">12</span>
+          <span class="stat-label">sản phẩm số<br><small>11 Web App + 1 video tích hợp</small></span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">497</span>
+          <span class="stat-label">CBCNV<br><small>phạm vi tập huấn Camera</small></span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">04</span>
+          <span class="stat-label">lớp tập huấn<br><small>02–03/06/2026 qua Zoom</small></span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">~1h</span>
+          <span class="stat-label">eTaxMobile<br><small>từ yêu cầu khẩn đến xuất bản</small></span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">~2h</span>
+          <span class="stat-label">Web App HKD<br><small>khóa bổ sung nghiệp vụ kế toán</small></span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">0đ</span>
+          <span class="stat-label">chi phí thuê ngoài<br><small>tận dụng AI &amp; Vercel sẵn có</small></span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">03</span>
+          <span class="stat-label">lớp ĐTV mới 1260<br><small>triển khai T6–T8/2026</small></span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">02</span>
+          <span class="stat-label">lớp kỹ năng nội bộ<br><small>dành cho ĐTV Đài CNTT</small></span>
+        </div>
+      </div>
+    </div>
+    <figure class="hero-evidence container">
+      <img src="assets/evidence/hinh1-ket-qua-noi-bat.png" alt="Hình 1. Bảng tổng hợp kết quả triển khai trong hồ sơ sáng kiến nộp ban đầu" loading="lazy">
+      <figcaption>Hình 1. Bảng tổng hợp kết quả trong hồ sơ sáng kiến nộp ban đầu — số liệu đầy đủ, cập nhật nhất được trình bày ở dải thống kê phía trên.</figcaption>
+    </figure>
+  </section>
+
+  <!-- VAN DE - GIAI PHAP - GIA TRI -->
+  <section class="section" id="tom-tat">
+    <div class="container">
+      <h2 class="section-title">Vấn đề — Giải pháp — Giá trị tạo ra</h2>
+      <div class="triad">
+        <div class="triad-card">
+          <span class="triad-icon">⚠️</span>
+          <h3>Vấn đề</h3>
+          <p>Tài liệu tĩnh, cập nhật chậm, khó tra cứu trên di động; yêu cầu nghiệp vụ phát sinh nhanh; phân tích EMAS còn thủ công theo văn bản quy định.</p>
+        </div>
+        <div class="triad-card triad-highlight">
+          <span class="triad-icon">💡</span>
+          <h3>Giải pháp</h3>
+          <p>Quy trình 4 bước dùng Claude để biến yêu cầu nghiệp vụ thành Web App HTML/CSS/JS, kiểm thử bởi giảng viên và xuất bản trên Vercel.</p>
+        </div>
+        <div class="triad-card">
+          <span class="triad-icon">📈</span>
+          <h3>Giá trị tạo ra</h3>
+          <p>Tự chủ triển khai; 12 sản phẩm số; hỗ trợ đào tạo, ứng cứu nghiệp vụ, EMAS và truyền thông; có trường hợp hoàn thành trong 1–2 giờ.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LY DO + THUC TRANG -->
+  <section class="section section-alt" id="thuc-trang">
+    <div class="container">
+      <h2 class="section-title">Lý do đề xuất sáng kiến</h2>
+      <p class="section-lead full-justify">Trung tâm Dịch vụ Khách hàng (TTDVKH) quản lý lực lượng điện thoại viên (ĐTV) phục vụ các tổng đài 18001260, 18001166, 18001091 cùng nhiều dịch vụ VT–CNTT và dịch vụ số. Chính sách sản phẩm, quy trình kỹ thuật và kịch bản tư vấn thay đổi thường xuyên theo yêu cầu sản xuất kinh doanh và các đợt tái cơ cấu; công tác quản trị đào tạo phải vừa đúng thông tin, vừa cập nhật nhanh, vừa dễ tra cứu. Trước khi có sáng kiến, công tác này chủ yếu dựa trên tài liệu tĩnh — phù hợp nội dung ổn định nhưng bộc lộ rõ hạn chế khi chính sách thay đổi nhanh hoặc phát sinh yêu cầu khẩn.</p>
+
+      <h3 class="sub-title">Thực trạng trước khi có sáng kiến</h3>
+      <div class="gap-grid">
+        <div class="gap-card">
+          <span class="gap-icon-badge">📄</span>
+          <h4>Tài liệu tĩnh, cập nhật thủ công</h4>
+          <p>Đào tạo, hướng dẫn nghiệp vụ chủ yếu ở dạng Word/PowerPoint/PDF. Mỗi lần chính sách thay đổi, giảng viên phải rà soát, sửa nội dung, dàn trang và phát hành lại; người học khó xác định đâu là phiên bản mới nhất.</p>
+        </div>
+        <div class="gap-card">
+          <span class="gap-icon-badge">📱</span>
+          <h4>Khó tra cứu trên thiết bị di động</h4>
+          <p>Nội dung dài, trình bày tuyến tính, ít tương tác; ĐTV khó tìm nhanh thông tin cần thiết ngay trong lúc tiếp nhận và tư vấn khách hàng qua điện thoại.</p>
+        </div>
+        <div class="gap-card">
+          <span class="gap-icon-badge">📊</span>
+          <h4>Chưa có công cụ phân tích EMAS</h4>
+          <p>Việc tra cứu, đối chiếu tiêu chí chấm điểm chất lượng cuộc gọi chủ yếu thực hiện thủ công theo văn bản quy định; giảng viên và ĐTV chưa có công cụ tương tác riêng để tự kiểm tra, hỗ trợ coaching.</p>
+        </div>
+        <div class="gap-card">
+          <span class="gap-icon-badge">⏳</span>
+          <h4>Yêu cầu khẩn dễ thành nút thắt tiến độ</h4>
+          <p>Với tình huống phát sinh đột xuất (chính sách mới, chiến dịch ngắn hạn), thời gian chuẩn bị tài liệu theo cách làm cũ có thể kéo dài nhiều ngày — trong khi thực tế có yêu cầu chỉ được phép xử lý trong vài giờ (eTaxMobile ~1 giờ, HKD ~2 giờ).</p>
+        </div>
+        <div class="gap-card">
+          <span class="gap-icon-badge">🧩</span>
+          <h4>Phụ thuộc nguồn lực CNTT chuyên trách</h4>
+          <p>Nhân sự đào tạo hiểu nghiệp vụ nhưng không phải lập trình viên; các nhu cầu Web App quy mô nhỏ khó được ưu tiên nếu phải chờ qua quy trình phát triển CNTT đầy đủ.</p>
+        </div>
+        <div class="gap-card">
+          <span class="gap-icon-badge">🗂️</span>
+          <h4>Nguồn tài liệu đào tạo phân tán</h4>
+          <p>Tài liệu tham khảo nằm rải rác ở nhiều nguồn (NotebookLM, cẩm nang, hệ thống CCOS...); khi đào tạo học viên, giảng viên phải tự tổng hợp hướng dẫn từ nhiều nguồn, truy cập nhiều hệ thống khác nhau.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MUC TIEU -->
+  <section class="section" id="muc-tieu">
+    <div class="container">
+      <div class="ai-bridge">
+        <span class="ai-bridge-icon">✨</span>
+        <p><strong>Bứt phá bằng AI:</strong> Toàn bộ 6 điểm nghẽn trên được giải quyết nhờ ứng dụng <strong>Claude (Anthropic)</strong> — chính giảng viên nghiệp vụ, không cần biết lập trình, tự thiết kế, sinh mã và xuất bản Web App bằng AI.</p>
+      </div>
+
+      <h2 class="section-title">Mục tiêu của sáng kiến</h2>
+      <p class="section-lead">Từ thực trạng trên, sáng kiến đặt ra 5 mục tiêu cụ thể để giải quyết đúng các điểm nghẽn đã xác định:</p>
+      <div class="goal-grid">
+        <div class="goal-card">
+          <span class="goal-icon-badge">⚙️</span>
+          <span class="goal-num">01</span>
+          <h4>Chuẩn hóa quy trình 4 bước</h4>
+          <p>Để nhân sự đào tạo có thể tự xây dựng Web App nghiệp vụ quy mô nhỏ, giảm phụ thuộc vào nguồn lực lập trình chuyên trách.</p>
+        </div>
+        <div class="goal-card">
+          <span class="goal-icon-badge">💻</span>
+          <span class="goal-num">02</span>
+          <h4>Chuyển đổi sang Web App tương tác</h4>
+          <p>Đưa nội dung đào tạo, hướng dẫn nghiệp vụ từ tài liệu tĩnh sang Web App tương tác, thân thiện thiết bị di động và dễ cập nhật khi chính sách thay đổi.</p>
+        </div>
+        <div class="goal-card">
+          <span class="goal-icon-badge">📈</span>
+          <span class="goal-num">03</span>
+          <h4>Số hóa công cụ phân tích EMAS</h4>
+          <p>Tạo công cụ tự tra cứu, đối chiếu tiêu chí EMAS phục vụ giảng viên và ĐTV, hỗ trợ coaching và cải thiện chất lượng cuộc gọi.</p>
+        </div>
+        <div class="goal-card">
+          <span class="goal-icon-badge">⚡</span>
+          <span class="goal-num">04</span>
+          <h4>Phản ứng nhanh với yêu cầu phát sinh</h4>
+          <p>Đáp ứng nhanh các yêu cầu theo chiến dịch hoặc chính sách mới; đặc biệt với các tình huống cần tài liệu trong thời gian ngắn.</p>
+        </div>
+        <div class="goal-card">
+          <span class="goal-icon-badge">🚀</span>
+          <span class="goal-num">05</span>
+          <h4>Nhân rộng mô hình tự chủ công cụ số</h4>
+          <p>Hình thành mô hình "nhân sự nghiệp vụ làm chủ công cụ số" có thể đóng gói, chuyển giao và nhân rộng trong các đơn vị của Tổng Công ty.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TINH MOI -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Tính mới và điểm sáng tạo</h2>
+      <p class="section-lead">Điểm mới không nằm ở việc dùng riêng lẻ một chatbot AI, mà ở việc biến Claude thành một "lớp công cụ lập trình" trong quy trình do giảng viên nghiệp vụ làm chủ.</p>
+      <div class="grid-4">
+        <div class="mini-card">
+          <span class="mini-badge">01</span>
+          <h4>Từ tài liệu sang sản phẩm số</h4>
+          <p>Nguồn nghiệp vụ được cấu trúc thành menu, bộ lọc, checklist, tình huống, bảng tra cứu — thay vì chỉ số hóa nguyên trạng Word/PDF.</p>
+        </div>
+        <div class="mini-card">
+          <span class="mini-badge">02</span>
+          <h4>"Người dùng AI" → "Kiến trúc sư giải pháp"</h4>
+          <p>Giảng viên thiết kế Prompt Architecture có cấu trúc, kiểm thử kết quả và quản lý phiên bản, không chỉ hỏi đáp với AI.</p>
+        </div>
+        <div class="mini-card">
+          <span class="mini-badge">03</span>
+          <h4>Từ sản phẩm đơn lẻ sang hệ sinh thái</h4>
+          <p>Ứng dụng nhóm hóa theo 4 nhu cầu nghiệp vụ, dùng chung cách triển khai, tái sử dụng mẫu giao diện/logic/prompt.</p>
+        </div>
+        <div class="mini-card">
+          <span class="mini-badge">04</span>
+          <h4>Human-in-the-loop</h4>
+          <p>AI tạo mã, nhưng quyết định nghiệp vụ, kiểm tra tính đúng và phê duyệt nội dung vẫn do con người thực hiện.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUY TRINH -->
+  <section class="section section-alt" id="quy-trinh">
+    <div class="container">
+      <h2 class="section-title">Quy trình AI Web App Studio — 4 bước khép kín</h2>
+      <p class="section-lead">Giảng viên đóng vai "kiến trúc sư giải pháp"; Claude đóng vai "lập trình viên AI". Rút ngắn khoảng cách từ "có yêu cầu nghiệp vụ" đến "có công cụ số có thể dùng", vẫn giữ vai trò kiểm soát của chuyên gia nghiệp vụ.</p>
+
+      <div class="timeline">
+        <div class="timeline-step">
+          <span class="timeline-num">1</span>
+          <h4>Phân tích yêu cầu &amp; khóa nguồn thông tin</h4>
+          <p>Xác định mục tiêu, đối tượng, nguồn tài liệu được phép dùng — đúng phiên bản, rõ nguồn, không đưa dữ liệu cá nhân/khách hàng lên Web App công khai.</p>
+        </div>
+        <div class="timeline-step">
+          <span class="timeline-num">2</span>
+          <h4>Thiết kế Prompt Architecture</h4>
+          <p>Cấu trúc prompt có chủ đích gồm 6 khối để Claude hiểu đúng vai trò và biên dịch nghiệp vụ thành giao diện.</p>
+        </div>
+        <div class="timeline-step">
+          <span class="timeline-num">3</span>
+          <h4>Sinh mã, kiểm thử &amp; tinh chỉnh</h4>
+          <p>Claude sinh HTML/CSS/JS; giảng viên kiểm thử trên bản xem trước, so sánh với tài liệu nguồn, thử nút/menu/bộ lọc, kiểm tra responsive.</p>
+        </div>
+        <div class="timeline-step">
+          <span class="timeline-num">4</span>
+          <h4>Xuất bản, chia sẻ &amp; cập nhật phiên bản</h4>
+          <p>Triển khai trên Vercel để có URL truy cập; khi chính sách đổi, giảng viên cập nhật mã và xuất bản lại trên cùng hệ thống.</p>
+        </div>
+      </div>
+
+      <h3 class="sub-title">Bước 2 — 6 khối Prompt Architecture</h3>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Khối</th><th>Nội dung mô tả</th><th>Mục đích</th></tr></thead>
+          <tbody>
+            <tr><td>1. Vai trò AI</td><td>Chuyên gia frontend/UI-UX, lập trình Web App tĩnh</td><td>Định hình cách AI tổ chức giải pháp</td></tr>
+            <tr><td>2. Bối cảnh nghiệp vụ</td><td>Tổng đài/dịch vụ/đối tượng học viên</td><td>Giữ đúng ngữ cảnh sử dụng</td></tr>
+            <tr><td>3. Dữ liệu đầu vào</td><td>Tài liệu chính sách, quy trình, kịch bản</td><td>Bảo đảm nội dung bám nguồn</td></tr>
+            <tr><td>4. Quy tắc logic</td><td>Tìm kiếm, lọc, checklist, tính toán, câu hỏi</td><td>Chuyển nghiệp vụ thành chức năng</td></tr>
+            <tr><td>5. UI/UX</td><td>Mobile-first, dễ đọc, menu rõ, màu sắc phù hợp</td><td>Tăng khả năng tra cứu và tự học</td></tr>
+            <tr><td>6. Kiểm thử đầu ra</td><td>Danh mục nội dung, logic, link, responsive</td><td>Giảm lỗi trước khi xuất bản</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- SAN PHAM -->
+  <section class="section" id="san-pham">
+    <div class="container">
+      <h2 class="section-title">Hệ sinh thái sản phẩm đã triển khai</h2>
+      <p class="section-lead">Từ tháng 06/2026, sáng kiến đã hình thành <strong>12 sản phẩm số</strong> — 11 Web App độc lập, 01 phiên bản video tích hợp và 01 Web App báo cáo — chia thành 4 nhóm chức năng bám sát thực tế vận hành.</p>
+
+      <div class="group-summary">
+        <div class="group-chip"><span class="dot dot-a"></span>Đào tạo &amp; bồi dưỡng — 05 Web App</div>
+        <div class="group-chip"><span class="dot dot-b"></span>Ứng cứu nghiệp vụ — 02 Web App + 01 video</div>
+        <div class="group-chip"><span class="dot dot-c"></span>Phân tích EMAS — 02 Web App</div>
+        <div class="group-chip"><span class="dot dot-d"></span>Truyền thông – Công đoàn — 01 Web App</div>
+      </div>
+
+      <!-- Group A -->
+      <h3 class="group-title"><span class="dot dot-a"></span>A. Đào tạo và bồi dưỡng ĐTV <span class="group-count">05 Web App</span></h3>
+      <div class="product-grid">
+
+        <article class="product-card">
+          <a class="product-media" href="https://cntt-beige.vercel.app/" target="_blank" rel="noopener">
+            <img src="assets/products/p01-hoc-vien-cntt.png" alt="Ảnh chụp màn hình Web App đào tạo ĐTV mới tổng đài 18001260" loading="lazy">
+          </a>
+          <div class="product-body">
+            <h4>Đào tạo ĐTV mới tổng đài 18001260</h4>
+            <p>Áp dụng từ 06/2026 cho các khóa ĐTV mới.</p>
+            <a class="product-link" href="https://cntt-beige.vercel.app/" target="_blank" rel="noopener">Truy cập Web App →</a>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <a class="product-media" href="https://1260-omega.vercel.app/" target="_blank" rel="noopener">
+            <img src="assets/products/p02-ky-nang-giao-tiep.png" alt="Ảnh chụp màn hình Web App đào tạo nâng cao kỹ năng ĐTV 18001260" loading="lazy">
+          </a>
+          <div class="product-body">
+            <h4>Đào tạo nâng cao kỹ năng ĐTV 18001260</h4>
+            <p>Áp dụng từ 06/2026 cho đào tạo nâng cao kỹ năng nội bộ Đài CNTT.</p>
+            <a class="product-link" href="https://1260-omega.vercel.app/" target="_blank" rel="noopener">Truy cập Web App →</a>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <a class="product-media" href="https://hkd-tt-152.vercel.app/" target="_blank" rel="noopener">
+            <img src="assets/products/p03-hkd.png" alt="Ảnh chụp màn hình Web App đào tạo bổ sung dịch vụ VNPT HKD" loading="lazy">
+          </a>
+          <div class="product-body">
+            <h4>Đào tạo bổ sung dịch vụ VNPT HKD</h4>
+            <p>Áp dụng từ 07/2026 cho khóa bổ sung nghiệp vụ kế toán VNPT HKD.</p>
+            <a class="product-link" href="https://hkd-tt-152.vercel.app/" target="_blank" rel="noopener">Truy cập Web App →</a>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <a class="product-media" href="https://1166-n3-kynang.vercel.app/" target="_blank" rel="noopener">
+            <img src="assets/products/p07-coaching-nhom.png" alt="Ảnh chụp màn hình Web App kỹ năng cho nhóm ĐTV cần cải thiện chất lượng" loading="lazy">
+          </a>
+          <div class="product-body">
+            <h4>Kỹ năng cho nhóm ĐTV cần cải thiện chỉ số chất lượng</h4>
+            <p>Áp dụng 07/2026 cho 09 ĐTV đã qua 03 đợt đào tạo năm 2025.</p>
+            <a class="product-link" href="https://1166-n3-kynang.vercel.app/" target="_blank" rel="noopener">Truy cập Web App →</a>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <a class="product-media" href="https://mt-thanh-thuy.vercel.app/" target="_blank" rel="noopener">
+            <img src="assets/products/p08-coaching-1-1.png" alt="Ảnh chụp màn hình Web App bổ sung nghiệp vụ 18001166 nhánh 1 cho ĐTV chuyển đổi" loading="lazy">
+          </a>
+          <div class="product-body">
+            <h4>Bổ sung nghiệp vụ/kỹ năng 18001166 nhánh 1 cho ĐTV chuyển đổi</h4>
+            <p>Áp dụng cho khóa 08/2026 theo yêu cầu chuyển đổi công việc.</p>
+            <a class="product-link" href="https://mt-thanh-thuy.vercel.app/" target="_blank" rel="noopener">Truy cập Web App →</a>
+          </div>
+        </article>
+      </div>
+
+      <figure class="evidence-figure">
+        <img src="assets/evidence/hinh3-webapp-daotao.jpg" alt="Hình 3. Một số Web App đào tạo/kỹ năng được sử dụng trong các lớp trực tuyến" loading="lazy">
+        <figcaption>Hình 3. Một số Web App đào tạo/kỹ năng được sử dụng trong các lớp trực tuyến</figcaption>
+      </figure>
+
+      <!-- Group B -->
+      <h3 class="group-title"><span class="dot dot-b"></span>B. Ứng cứu nghiệp vụ và yêu cầu khẩn <span class="group-count">02 Web App + 01 video</span></h3>
+      <div class="product-grid">
+
+        <article class="product-card">
+          <a class="product-media" href="https://hdsd-etax.vercel.app/" target="_blank" rel="noopener">
+            <img src="assets/products/p04-etax.png" alt="Ảnh chụp màn hình Web App hướng dẫn sinh trắc học eTaxMobile" loading="lazy">
+          </a>
+          <div class="product-body">
+            <h4>Hướng dẫn thủ tục sinh trắc học eTaxMobile</h4>
+            <p>Xây dựng trong ~01 giờ theo yêu cầu khẩn của Đài CNTT.</p>
+            <a class="product-link" href="https://hdsd-etax.vercel.app/" target="_blank" rel="noopener">Truy cập Web App →</a>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <a class="product-media" href="https://hdsd-etax.vercel.app/video" target="_blank" rel="noopener">
+            <img src="assets/products/p05-etax-video.png" alt="Ảnh chụp màn hình phiên bản video hướng dẫn eTaxMobile trên smartphone" loading="lazy">
+          </a>
+          <div class="product-body">
+            <h4>eTaxMobile — phiên bản video trên smartphone</h4>
+            <p>Tích hợp trên cùng hệ thống, dành cho thao tác trên di động.</p>
+            <a class="product-link" href="https://hdsd-etax.vercel.app/video" target="_blank" rel="noopener">Truy cập Web App →</a>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <a class="product-media" href="https://camera-vnpt.vercel.app/" target="_blank" rel="noopener">
+            <img src="assets/products/p06-camera.png" alt="Ảnh chụp màn hình Web App chiến dịch phát triển thuê bao Camera" loading="lazy">
+          </a>
+          <div class="product-body">
+            <h4>Chiến dịch phát triển thuê bao Camera</h4>
+            <p>~03 giờ xây dựng; dùng cho 04 lớp tập huấn 02–03/06/2026, dẫn link trong văn bản 461/DVKH-TH, phạm vi 497 CBCNV.</p>
+            <a class="product-link" href="https://camera-vnpt.vercel.app/" target="_blank" rel="noopener">Truy cập Web App →</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="evidence-pair">
+        <figure class="evidence-figure">
+          <img src="assets/evidence/hinh4-webapp-camera.jpg" alt="Hình 4. Web App Camera chuyển nội dung tập huấn thành các mô-đun tra cứu trực quan" loading="lazy">
+          <figcaption>Hình 4. Web App Camera chuyển nội dung tập huấn thành các mô-đun tra cứu trực quan</figcaption>
+        </figure>
+        <figure class="evidence-figure">
+          <img src="assets/evidence/hinh5-minhchung-vanban.png" alt="Hình 5. Minh chứng văn bản tập huấn có dẫn link Web App Camera và kế hoạch 04 lớp đào tạo" loading="lazy">
+          <figcaption>Hình 5. Minh chứng văn bản tập huấn số 461/DVKH-TH, dẫn link Web App Camera và kế hoạch 04 lớp đào tạo</figcaption>
+        </figure>
+      </div>
+
+      <!-- Group C -->
+      <h3 class="group-title"><span class="dot dot-c"></span>C. Phân tích chỉ số chất lượng EMAS <span class="group-count">02 Web App</span></h3>
+      <div class="product-grid">
+
+        <article class="product-card">
+          <a class="product-media" href="https://emas-eight.vercel.app/" target="_blank" rel="noopener">
+            <img src="assets/products/p10-emas-giangvien.png" alt="Ảnh chụp màn hình Web App phân tích tiêu chí EMAS dành cho giảng viên" loading="lazy">
+          </a>
+          <div class="product-body">
+            <h4>Phân tích tiêu chí chấm điểm EMAS — dành cho Giảng viên</h4>
+            <p>Áp dụng từ 07/2026, hỗ trợ tra cứu, đối chiếu tiêu chí khi phân tích chất lượng cuộc gọi.</p>
+            <a class="product-link" href="https://emas-eight.vercel.app/" target="_blank" rel="noopener">Truy cập Web App →</a>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-media product-media-empty">
+            <span>Chưa có ảnh minh hoạ</span>
+          </div>
+          <div class="product-body">
+            <h4>Phân tích tiêu chí chấm điểm EMAS — dành cho học viên/ĐTV</h4>
+            <p>Áp dụng từ 07/2026, giúp ĐTV tự kiểm tra tiêu chí, nhận biết lỗi thường gặp.</p>
+            <a class="product-link" href="https://dtv-site-gamma.vercel.app/" target="_blank" rel="noopener">Truy cập Web App →</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Group D -->
+      <h3 class="group-title"><span class="dot dot-d"></span>D. Truyền thông và thi đua Công đoàn <span class="group-count">01 Web App</span></h3>
+      <div class="product-grid product-grid-single">
+        <article class="product-card product-card-wide">
+          <a class="product-media" href="https://vnpt-heart-but-pha-ai.vercel.app/" target="_blank" rel="noopener">
+            <img src="assets/products/p09-vnpt-heart.png" alt="Ảnh chụp màn hình Web App báo cáo dự thi Bứt phá cùng AI chủ đề VNPT HEART" loading="lazy">
+          </a>
+          <div class="product-body">
+            <h4>Báo cáo dự thi "Bứt phá cùng AI" — chủ đề VNPT HEART</h4>
+            <p>Trình bày nội dung dạng tương tác, trực quan cho phong trào thi đua theo văn bản 3410/PTTĐ VNPT VNP CM-CĐ và văn bản điều chỉnh 98/CĐVNPT VNP.</p>
+            <a class="product-link" href="https://vnpt-heart-but-pha-ai.vercel.app/" target="_blank" rel="noopener">Truy cập Web App →</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Self-referencing product -->
+      <h3 class="group-title"><span class="dot dot-e"></span>E. Báo cáo sáng kiến <span class="group-count">01 Web App</span></h3>
+      <div class="product-grid product-grid-single">
+        <article class="product-card product-card-wide">
+          <div class="product-media product-media-empty product-media-report">
+            <span>AI Web App Studio</span>
+          </div>
+          <div class="product-body">
+            <h4>Web App báo cáo sáng kiến</h4>
+            <p>Phiên bản báo cáo sáng kiến trước đó, cùng thuộc danh mục Web App đã triển khai của Trung tâm.</p>
+            <a class="product-link" href="https://ai-video-pipeline-three.vercel.app/" target="_blank" rel="noopener">Truy cập Web App →</a>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- KIEM SOAT CHAT LUONG -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Kiểm soát chất lượng và rủi ro khi sử dụng AI</h2>
+      <div class="grid-checklist">
+        <div class="check-card"><span class="check-icon">✓</span><div><strong>Kiểm soát nguồn nghiệp vụ</strong><p>Chỉ dùng nội dung từ tài liệu/chính sách đã ban hành hoặc xác nhận; ghi nhận thời điểm cập nhật.</p></div></div>
+        <div class="check-card"><span class="check-icon">✓</span><div><strong>Con người phê duyệt đầu ra</strong><p>Claude chỉ hỗ trợ tạo mã và bố cục; giảng viên chịu trách nhiệm kiểm tra nội dung, logic, trải nghiệm.</p></div></div>
+        <div class="check-card"><span class="check-icon">✓</span><div><strong>Bảo vệ dữ liệu</strong><p>Không đưa dữ liệu cá nhân, khách hàng hoặc thông tin mật lên Web App công khai.</p></div></div>
+        <div class="check-card"><span class="check-icon">✓</span><div><strong>Kiểm thử chức năng</strong><p>Nút, menu, bộ lọc, công thức, hiển thị di động được thử bằng tình huống mẫu trước khi áp dụng.</p></div></div>
+        <div class="check-card"><span class="check-icon">✓</span><div><strong>Quản lý phiên bản</strong><p>Cập nhật tập trung trên Web App; lưu nguồn tham chiếu và ngày cập nhật cho nội dung quan trọng.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KET QUA -->
+  <section class="section" id="ket-qua">
+    <div class="container">
+      <h2 class="section-title">Kết quả áp dụng</h2>
+      <p class="section-lead">Web App Camera trở thành tài liệu tập huấn chính thức cho <strong>toàn bộ 497 CBCNV</strong> của Trung tâm, tổ chức <strong>04 lớp qua Zoom</strong> trong hai ngày 02–03/06/2026, mỗi lớp 90 phút (45 phút giảng dạy + 30 phút kiểm tra trắc nghiệm 30 câu trên VNPT Elearning), theo Thông báo số 2634/TB-VNPT VNPT-VP ngày 14/05/2026.</p>
+
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Tiêu chí</th><th>Trước khi áp dụng</th><th>Sau khi áp dụng</th><th>Giá trị cải thiện</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Tốc độ xây dựng</td>
+              <td>Biên soạn/dàn trang tài liệu tĩnh; yêu cầu khẩn khó đáp ứng ngay.</td>
+              <td>Chuyển yêu cầu nghiệp vụ thành Web App trong thời gian ngắn; eTax ~1 giờ, HKD ~2 giờ.</td>
+              <td>Tăng khả năng phản ứng theo thời điểm.</td>
+            </tr>
+            <tr>
+              <td>Cập nhật nội dung</td>
+              <td>Sửa Word/PPT/PDF, phát hành lại nhiều phiên bản.</td>
+              <td>Cập nhật tập trung trên Web App, chia sẻ qua một đường link.</td>
+              <td>Giảm thao tác, giảm nguy cơ dùng nhầm phiên bản.</td>
+            </tr>
+            <tr>
+              <td>Trải nghiệm học/tra cứu</td>
+              <td>Nội dung dài, ít tương tác; khó tìm nhanh trên điện thoại.</td>
+              <td>Menu, checklist, bộ lọc, mô-đun nội dung; thuận tiện trên PC và smartphone.</td>
+              <td>Tăng tính tự học và tự tra cứu.</td>
+            </tr>
+            <tr>
+              <td>Phân tích EMAS</td>
+              <td>Tra cứu thủ công theo văn bản quy định.</td>
+              <td>02 Web App riêng cho giảng viên và ĐTV.</td>
+              <td>Hỗ trợ coaching theo tiêu chí cụ thể.</td>
+            </tr>
+            <tr>
+              <td>Nguồn lực phát triển</td>
+              <td>Nhu cầu web nhỏ có thể phải chờ hỗ trợ kỹ thuật/lập trình.</td>
+              <td>Giảng viên tự thiết kế, kiểm thử, triển khai với AI hỗ trợ.</td>
+              <td>Giảm phụ thuộc, tăng tự chủ nội bộ.</td>
+            </tr>
+            <tr>
+              <td>Chi phí triển khai</td>
+              <td>Tốn chi phí thuê ngoài hoặc nguồn lực lập trình chuyên trách.</td>
+              <td>Tận dụng AI và hạ tầng Vercel miễn phí sẵn có.</td>
+              <td>Chi phí 0 đồng cho phát triển từng ứng dụng.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- DANH GIA LOI ICH -->
+  <section class="section section-alt" id="danh-gia">
+    <div class="container">
+      <h2 class="section-title">Đánh giá lợi ích thu được</h2>
+      <div class="benefit-grid">
+        <div class="benefit-card">
+          <h4>Hiệu quả năng suất &amp; nguồn lực</h4>
+          <ul>
+            <li>Rút ngắn thời gian chuẩn bị sản phẩm số — tính bằng giờ thay vì một chu kỳ biên soạn kéo dài.</li>
+            <li>Giảm phụ thuộc lập trình viên cho ứng dụng nghiệp vụ quy mô nhỏ.</li>
+            <li>Tối ưu chi phí: không phát sinh nhu cầu thuê đơn vị ngoài.</li>
+          </ul>
+        </div>
+        <div class="benefit-card">
+          <h4>Hiệu quả đào tạo &amp; vận hành</h4>
+          <ul>
+            <li>Chuẩn hóa một điểm truy cập duy nhất qua đường link Web App.</li>
+            <li>Hỗ trợ học trên thiết bị di động, nội dung chia mô-đun, dễ tìm.</li>
+            <li>02 Web App EMAS tăng hiệu quả coaching, hỗ trợ cả người dạy và người học.</li>
+            <li>Tăng tốc phản ứng nghiệp vụ với chiến dịch ngắn hạn, thay đổi chính sách.</li>
+            <li>Truyền thông, thi đua phong trào Công đoàn vốn đã hiệu quả qua văn bản, hình ảnh — nay có thêm kênh Web App giúp thông tin vừa online, vừa tăng trải nghiệm tương tác cho CBCNV.</li>
+          </ul>
+        </div>
+        <div class="benefit-card">
+          <h4>Đổi mới phương thức làm việc</h4>
+          <ul>
+            <li>Nhân sự đào tạo chuyển từ "người biên soạn tài liệu" sang "người thiết kế trải nghiệm học và kiến trúc giải pháp số".</li>
+            <li>Đội ngũ nhìn nhận AI như công cụ sản xuất, không chỉ công cụ hỏi đáp.</li>
+            <li>Quy trình có thể đóng gói thành cẩm nang, bộ prompt mẫu, nhân rộng cho đơn vị khác trong Tổng Công ty.</li>
+          </ul>
+        </div>
+        <div class="benefit-card">
+          <h4>Hiệu quả của giải pháp Web App tĩnh</h4>
+          <ul>
+            <li>Giải quyết hiệu quả công tác biên soạn tài liệu giảng dạy đòi hỏi phân tích, tổng hợp từ nhiều nguồn dữ liệu.</li>
+            <li>Đáp ứng xuyên suốt quá trình giảng dạy mà không phụ thuộc vào máy chủ xử lý thời gian thực (real-time server) như các nền tảng notebook.</li>
+            <li>Có khả năng xuất riêng từng module học tập cho học viên mà không yêu cầu đăng nhập.</li>
+            <li>Giao diện trực quan, không cần cài đặt; đáp ứng xuyên suốt nhu cầu tra cứu tài liệu học tập mọi lúc, mọi nơi.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="sub-title">Tự đánh giá tiêu chí xét công nhận sáng kiến</h3>
+      <div class="criteria-grid">
+        <div class="criteria-card">
+          <span class="criteria-check">✓</span>
+          <h4>Tính mới &amp; sáng tạo đột phá</h4>
+          <p>Giải pháp có nội dung mới tại Tổng Công ty; giảng viên nghiệp vụ tự thiết kế Web App bằng Claude theo quy trình 4 bước.</p>
+        </div>
+        <div class="criteria-card">
+          <span class="criteria-check">✓</span>
+          <h4>Phạm vi đã triển khai</h4>
+          <p>Đã áp dụng tại 01 đơn vị trực thuộc Tổng Công ty — Trung tâm Dịch vụ Khách hàng.</p>
+        </div>
+        <div class="criteria-card">
+          <span class="criteria-check">✓</span>
+          <h4>Tính hiệu quả</h4>
+          <p>Rút ngắn thời gian xây dựng/cập nhật tài liệu; hỗ trợ 497 CBCNV chương trình Camera; tạo 02 công cụ EMAS.</p>
+        </div>
+        <div class="criteria-card">
+          <span class="criteria-check">✓</span>
+          <h4>Khả năng duy trì ≥ 1 năm</h4>
+          <p>Quy trình có thể tái sử dụng; Web App tiếp tục cập nhật theo chính sách và mở rộng cho nghiệp vụ mới.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TAC GIA -->
+  <section class="section" id="tac-gia">
+    <div class="container">
+      <h2 class="section-title">Nhóm tác giả</h2>
+      <div class="author-grid">
+        <div class="author-card author-lead">
+          <span class="author-role">Chủ trì sáng kiến · 40%</span>
+          <h4>Vưu Hồng Châu</h4>
+          <p>Chuyên viên Quản trị đào tạo — Phòng Nghiệp vụ Đào tạo, Trung tâm DVKH</p>
+          <p class="author-contact">ĐT: 0913 779 668</p>
+        </div>
+        <div class="author-card">
+          <span class="author-role">Đồng tác giả · 20%</span>
+          <h4>Nguyễn Thị Thanh Mai</h4>
+          <p>Chuyên viên đào tạo — Phòng Nghiệp vụ Đào tạo, Trung tâm DVKH</p>
+        </div>
+        <div class="author-card">
+          <span class="author-role">Đồng tác giả · 20%</span>
+          <h4>Võ Thị Minh Tâm</h4>
+          <p>Chuyên viên đào tạo — Phòng Nghiệp vụ Đào tạo, Trung tâm DVKH</p>
+        </div>
+        <div class="author-card">
+          <span class="author-role">Đồng tác giả · 20%</span>
+          <h4>Phan Thị Thơ</h4>
+          <p>Chuyên viên đào tạo — Phòng Nghiệp vụ Đào tạo, Trung tâm DVKH</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand brand-footer"><span class="brand-mark">AI</span><span class="brand-text">Web App Studio</span></div>
+      <p>Trung tâm Dịch vụ Khách hàng — Tổng Công ty Dịch vụ Viễn thông (VNPT VinaPhone), Hà Nội</p>
+    </div>
+    <p class="footer-copy">© 2026 Phòng Nghiệp vụ Đào tạo — Trung tâm DVKH VNPT VinaPhone. Báo cáo sáng kiến cấp Tổng Công ty.</p>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Đóng">&times;</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
