@@ -240,26 +240,6 @@ a { color: inherit; }
   margin: 40px 0 18px;
 }
 
-/* ---------- Triad ---------- */
-.triad {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.triad-card {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  background: #fff;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  padding: 26px 30px;
-  box-shadow: var(--shadow);
-}
-.triad-card-body { flex: 1; }
-.triad-card h3 { margin: 0 0 8px; color: var(--blue-900); }
-.triad-card p { margin: 0; color: var(--ink-soft); }
-.triad-icon { font-size: 1.6rem; line-height: 1; margin-top: 2px; }
 .value-list { margin: 0; padding-left: 18px; color: var(--ink-soft); }
 .value-list li { margin-bottom: 8px; }
 .value-list li:last-child { margin-bottom: 0; }
@@ -285,20 +265,6 @@ a { color: inherit; }
 .value-list--lg { font-size: 1.05rem; }
 .value-list--lg li { margin-bottom: 10px; }
 .value-list--lg li:last-child { margin-bottom: 0; }
-
-.triad-value {
-  background: #fff5f6;
-  border: 1px solid rgba(228, 3, 46, 0.25);
-  border-left: 5px solid var(--red);
-}
-.triad-value h3 {
-  color: var(--red-dark);
-  font-size: 1.1rem;
-  font-weight: 800;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-.triad-value .triad-icon { font-size: 1.9rem; }
 
 /* ---------- Gap cards (Thuc trang) ---------- */
 .gap-grid {
@@ -806,7 +772,6 @@ a { color: inherit; }
   .criteria-grid { grid-template-columns: 1fr; }
   .author-grid { grid-template-columns: 1fr; }
   .hero-cta { flex-direction: column; align-items: stretch; }
-  .triad-card { flex-direction: column; }
   .btn { justify-content: center; }
   .gap-card, .goal-card { max-width: 100%; }
   .section-lead.full-justify { text-align: left; }
