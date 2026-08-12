@@ -318,6 +318,10 @@ a { color: inherit; }
 .triad-card h3 { margin: 10px 0 8px; color: var(--blue-900); }
 .triad-card p { margin: 0; color: var(--ink-soft); }
 .triad-icon { font-size: 1.6rem; }
+.value-list { margin: 0; padding-left: 18px; color: var(--ink-soft); }
+.value-list li { margin-bottom: 8px; }
+.value-list li:last-child { margin-bottom: 0; }
+.value-num { color: var(--red); font-weight: 800; }
 .triad-highlight {
   background: linear-gradient(135deg, var(--blue-700), var(--blue-600));
   color: #fff;
