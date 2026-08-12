@@ -174,11 +174,8 @@ a { color: inherit; }
     #fff;
 }
 
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 48px;
-  align-items: center;
+.hero-copy--full {
+  max-width: 820px;
 }
 
 .eyebrow {
@@ -203,64 +200,10 @@ a { color: inherit; }
   color: var(--ink-soft);
   font-size: 1.05rem;
   margin: 0 0 28px;
-  max-width: 56ch;
+  max-width: 72ch;
 }
 
 .hero-cta { display: flex; gap: 14px; flex-wrap: wrap; }
-
-.hero-stats {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
-}
-
-.stat-card {
-  background: #fff;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  padding: 18px;
-  box-shadow: var(--shadow);
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-.stat-card.stat-accent {
-  background: linear-gradient(135deg, var(--blue-800), var(--blue-700));
-  border-color: transparent;
-  color: #fff;
-}
-.stat-num {
-  font-size: 1.9rem;
-  font-weight: 800;
-  color: var(--blue-700);
-}
-.stat-accent .stat-num { color: #fff; }
-.stat-label {
-  font-size: 0.85rem;
-  color: var(--ink-soft);
-  font-weight: 600;
-}
-.stat-accent .stat-label { color: rgba(255, 255, 255, 0.88); }
-.stat-label small { font-weight: 400; opacity: 0.85; }
-
-.hero-evidence {
-  margin-top: 48px;
-  text-align: center;
-}
-.hero-evidence img {
-  margin: 0 auto;
-  border-radius: var(--radius);
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow);
-  max-height: 340px;
-  object-fit: contain;
-  background: #fff;
-}
-.hero-evidence figcaption {
-  margin-top: 12px;
-  font-size: 0.85rem;
-  color: var(--ink-soft);
-}
 
 /* ---------- Sections ---------- */
 .section { padding: 72px 0; }
@@ -304,20 +247,24 @@ a { color: inherit; }
 
 /* ---------- Triad ---------- */
 .triad {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 .triad-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
   background: #fff;
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  padding: 26px;
+  padding: 26px 30px;
   box-shadow: var(--shadow);
 }
-.triad-card h3 { margin: 10px 0 8px; color: var(--blue-900); }
+.triad-card-body { flex: 1; }
+.triad-card h3 { margin: 0 0 8px; color: var(--blue-900); }
 .triad-card p { margin: 0; color: var(--ink-soft); }
-.triad-icon { font-size: 1.6rem; }
+.triad-icon { font-size: 1.6rem; line-height: 1; margin-top: 2px; }
 .value-list { margin: 0; padding-left: 18px; color: var(--ink-soft); }
 .value-list li { margin-bottom: 8px; }
 .value-list li:last-child { margin-bottom: 0; }
@@ -343,12 +290,20 @@ a { color: inherit; }
 .value-list--lg { font-size: 1.05rem; }
 .value-list--lg li { margin-bottom: 10px; }
 .value-list--lg li:last-child { margin-bottom: 0; }
-.triad-highlight {
-  background: linear-gradient(135deg, var(--blue-700), var(--blue-600));
-  color: #fff;
-  border-color: transparent;
+
+.triad-value {
+  background: #fff5f6;
+  border: 1px solid rgba(228, 3, 46, 0.25);
+  border-left: 5px solid var(--red);
 }
-.triad-highlight h3, .triad-highlight p { color: #fff; }
+.triad-value h3 {
+  color: var(--red-dark);
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.triad-value .triad-icon { font-size: 1.9rem; }
 
 /* ---------- Gap cards (Thuc trang) ---------- */
 .gap-grid {
@@ -821,8 +776,6 @@ a { color: inherit; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 980px) {
-  .hero-grid { grid-template-columns: 1fr; }
-  .triad { grid-template-columns: 1fr; }
   .grid-4 { grid-template-columns: repeat(2, 1fr); }
   .timeline { grid-template-columns: repeat(2, 1fr); }
   .product-grid { grid-template-columns: repeat(2, 1fr); }
@@ -852,13 +805,13 @@ a { color: inherit; }
   }
   .main-nav.open { display: flex; }
   .main-nav a { padding: 10px 0; }
-  .hero-stats { grid-template-columns: 1fr 1fr; }
   .grid-4 { grid-template-columns: 1fr; }
   .timeline { grid-template-columns: 1fr; }
   .product-grid { grid-template-columns: 1fr; }
   .criteria-grid { grid-template-columns: 1fr; }
   .author-grid { grid-template-columns: 1fr; }
   .hero-cta { flex-direction: column; align-items: stretch; }
+  .triad-card { flex-direction: column; }
   .btn { justify-content: center; }
   .gap-card, .goal-card { max-width: 100%; }
   .section-lead.full-justify { text-align: left; }
