@@ -322,6 +322,27 @@ a { color: inherit; }
 .value-list li { margin-bottom: 8px; }
 .value-list li:last-child { margin-bottom: 0; }
 .value-num { color: var(--red); font-weight: 800; }
+
+/* ---------- Hero value banner ---------- */
+.hero-value {
+  margin: 28px auto 0;
+  padding: 24px 28px;
+  background: #fff5f6;
+  border: 1px solid rgba(228, 3, 46, 0.25);
+  border-left: 5px solid var(--red);
+  border-radius: var(--radius);
+}
+.hero-value-title {
+  margin: 0 0 12px;
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--red-dark);
+}
+.value-list--lg { font-size: 1.05rem; }
+.value-list--lg li { margin-bottom: 10px; }
+.value-list--lg li:last-child { margin-bottom: 0; }
 .triad-highlight {
   background: linear-gradient(135deg, var(--blue-700), var(--blue-600));
   color: #fff;
