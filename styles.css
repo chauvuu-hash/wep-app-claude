@@ -260,7 +260,7 @@ a { color: inherit; }
   font-weight: 800;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--red-dark);
+  color: var(--blue-900);
 }
 .value-list--lg { font-size: 1.05rem; }
 .value-list--lg li { margin-bottom: 10px; }
